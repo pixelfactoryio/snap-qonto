@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  qonto-snap:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: qonto-snap
+    env_file: .env
+    volumes:
+      - ./workspace:/workspace
